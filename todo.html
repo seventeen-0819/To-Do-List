@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>The List that never ends</title>
+    <link rel="stylesheet" href="todo.css">
+    <script src="todo.js" defer></script>
+</head>
+<body onload="bootstrap()">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#add">Add</a></li>
+            <li><a href="#finish">Finish</a></li>
+            <li><a href="#display">Display</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <div id="home">
+            <!-- Code for Q1 starts-->
+            <h1>Welcome to The List that Never Ends!</h1>
+            <p>This is a to-do list web application that allows you to manage your tasks efficiently.</p>
+            <p>Use the navigation bar above or click the links below to access different sections.</p>
+            <ul>
+                <li><a href="#add">Add Tasks</a></li>
+                <li><a href="#finish">Finish Tasks</a></li>
+                <li><a href="#display">Display Tasks</a></li>
+            </ul>
+            <p>Use the link below to clear all the lists.</p>
+            <ul>
+                <li><a href="#" onclick="clearAllLists()">Clear Task Lists</a></li>
+            </ul>
+            <!-- Code for Q1 ends-->
+        </div>
+        <div id="add">
+            <h1>Add a New Task to the List</h1>
+            <ul>
+                <li><a href="#home">Go Home</a></li>
+            </ul>
+            <form>
+            <!-- Code for Q2 starts. Accept new task from user. 
+                 Finally, when the user clicks the submit button,
+                 use the onclick event to call addfunction() in
+                 todo.js file. Note that you can use something
+                 similar to <body onload="bootstrap()"> instead of 
+                 using an addEventListener. 
+            -->
+            <label for="taskDescription">Task Description:</label>
+            <input type="text" id="taskDescription">
+            <label for="priority">Priority:</label>
+            <select id="priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline">
+            <button type="button" onclick="addfunction()">Add Task</button>
+            <p>Good for you!</p>
+            <p>Good time management, Good life!</p>
+            <!-- Code for Q2 ends -->
+            </form>
+        </div>
+        <div id="finish">
+            <h1>Select a Task to Finish</h1>
+            <ul>
+                <li><a href="#home">Go Home</a></li>
+            </ul>
+            <form>
+            <!-- Code for Q3 starts. Finish a task given the ID/Sno. 
+                 When the user clicks the submit button, use the onclick
+                 event to call finishfunction() in todo.js file. 
+            -->
+            <label for="taskID">Task ID/Sno:</label>
+            <input type="number" id="taskID">
+            <button type="button" onclick="finishfunction()">Finish Task</button>
+            <p>Congratulation!</p>
+            <p>Good execution, Good life!</p>
+            <!-- Code for Q3 ends -->
+            </form>
+        </div>
+        <div id="display">
+            <!-- HTML code for Q4 has been written already.
+                 You will have to write the corresponding JS code
+                 to populate the tables. 
+                 An important design choice involves when to call the 
+                 JS function that populates the tables.
+            -->
+            <!-- Display outstanding list of Tasks -->
+            <h1>Task List</h1>
+            <ul>
+                <li><a href="#home">Go Home</a></li>
+            </ul>
+            <h2>Outstanding Tasks</h2>
+            <table id="displayoutstanding">
+                <thead>
+                    <tr>
+                        <th>Sno</th>
+                        <th>Description</th>
+                        <th>Priority</th>
+                        <th>Deadline</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <!-- Display Completed Tasks -->
+            <h2>Completed Tasks</h2>
+            <table id="displaycompleted">
+                <thead>
+                    <tr>
+                        <th>Sno</th>
+                        <th>Description</th>
+                        <th>Priority</th>
+                        <th>Deadline</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

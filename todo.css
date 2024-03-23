@@ -1,0 +1,126 @@
+/* Basic CSS styling has been provided to you.
+ * For Q6, try to enhance this CSS.
+ */
+body
+{
+    background-color: #F8F8FF;
+    height: 35%;
+}
+
+h1 {
+    color: brown;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;   
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 28px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: green;
+}
+
+#container {
+    background-color: #F5F5F5;
+    width: 90%;
+    margin: auto;
+    /* height: 100vh; */
+}
+
+#home {
+    background-color: #F0F8FF;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding-left: 20px
+}
+
+#add {
+    background-color: #F0F8FF;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding-left: 20px
+}
+
+#finish {
+    background-color: #F0F8FF;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding-left: 20px
+}
+
+#display {
+    background-color: #F0F8FF;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-left: 20px
+}
+
+#add p {
+    color: purple;
+    font-size: 28px;
+}
+
+#finish p {
+    color: purple;
+    font-size: 28px;
+}
+
+table {
+    margin: 5%;
+    padding: 0;
+    border: 0;
+    width: 90%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+thead {
+    color: white;
+    background-color:purple;
+}
+
+tbody {
+    overflow: hidden;
+    color: purple;
+    text-align: center;
+    margin: 10px;
+    background-color:white;
+}
+
+thead th {
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+td {
+    color: purple;
+    background-color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
